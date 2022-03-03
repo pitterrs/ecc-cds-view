@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group: Deere Interface</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMA0_SFUT_CLOUD_DEERETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMA0_SFUT_CLOUD_DEERE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMA0_SFUT_GET_DEERE_DATA</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Function to provide data to cloud</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_OFFSET</PARAMETER>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PAGE_SIZE</PARAMETER>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MRP_CONTROLLERS</PARAMETER>
+       <TYP>ZMA0_SFUT_DISPO_IF_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SEARCH_EXPRESSION</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZMA0_SFUT_DEERE_SQL_QUERY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SQL_SORT</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_SCHEDULE_DATA</PARAMETER>
+       <TYP>ZMA0_SFUT_DEERE_IF_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_NUMBER_OF_RECORDS</PARAMETER>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_OFFSET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Start select from index</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PAGE_SIZE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quantity of registers to be fetch</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MRP_CONTROLLERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>MRP Controller</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SEARCH_EXPRESSION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Variable for where clause</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SQL_SORT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fields for the sorting operation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_SCHEDULE_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type to retrieve data for the Deere application</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_NUMBER_OF_RECORDS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZMA0_SFUT_GET_LAST_SCHEDULES</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>SFUT - Retrieve last schedule line</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CH_SCHEDULE_LINES</PARAMETER>
+       <TYP>ZMA0_SFUT_DEERE_LAST_LINES_IFT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CH_SCHEDULE_LINES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Retrieve Last Schedule Line</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

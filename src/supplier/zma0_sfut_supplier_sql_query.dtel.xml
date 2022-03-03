@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZMA0_SFUT_SUPPLIER_SQL_QUERY</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Data element for the Search SQL Expression</DDTEXT>
+    <REPTEXT>Search SQL Expression</REPTEXT>
+    <SCRTEXT_S>SQL Exp.</SCRTEXT_S>
+    <SCRTEXT_M>SQL Expression</SCRTEXT_M>
+    <SCRTEXT_L>Search SQL Expression</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>030000</LENG>
+    <OUTPUTLEN>030000</OUTPUTLEN>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
